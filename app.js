@@ -18,7 +18,7 @@ app.set('view engine', 'ejs');
 require('./Config/db');
 // session middleware 
 app.use(session({
-    secret: process.env.SESSION_SECRET_KEY,
+    secret: "process.env.SESSION_SECRET_KEY",
     resave: false,
     saveUninitialized: true
 }));
