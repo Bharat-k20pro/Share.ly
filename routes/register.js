@@ -35,7 +35,6 @@ router.post('/', (req, res) => {
                 } else {
                     mailsend(email, 'Your otp for registration is ' + otp);
                     req.flash('success_msg', 'Otp is sended on your email')
-                    console.log(otp);
                     res.render('realOtp');
                     router.post('/otp', (req, res) => {
                         if (req.body.otp == otp) {
