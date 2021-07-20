@@ -7,7 +7,7 @@ function mailsend(user, key) {
         service: 'gmail',
         auth: {
             user: 'OrgaChrdomeHms23@gmail.com',
-            pass: "QWErty@765"
+            pass: 'QWErty@765'
         }
     });
     var mailOptions = {
