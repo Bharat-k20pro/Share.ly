@@ -80,10 +80,8 @@ app.use('/error', require('./routes/404_error'));
 
 // making a port where our website listen using express
 
-let Port = process.env.PORT;
-if (Port === null || Port === "") {
-    Port === 3000;
-}
+let Port = process.env.PORT || 3000;
+
 app.listen(Port, () => {
     console.log("Server is listining on port 3000!");
 });
