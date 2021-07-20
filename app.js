@@ -9,7 +9,7 @@ const bcrypt = require('bcrypt');
 const app = express();
 
 const dotenv = require('dotenv');
-dotenv.config({ path: './config.env' })
+dotenv.config({ path: './.env' })
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
