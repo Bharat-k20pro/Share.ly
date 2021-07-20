@@ -1,0 +1,6 @@
+machine api.heroku.com
+  login jainb0206@gmail.com
+  password d39c4d0c-6c7d-43a5-ba6a-0f00437b6518
+machine git.heroku.com
+  login jainb0206@gmail.com
+  password d39c4d0c-6c7d-43a5-ba6a-0f00437b6518
