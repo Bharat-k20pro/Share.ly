@@ -11,8 +11,6 @@ const app = express();
 const dotenv = require('dotenv');
 dotenv.config({ path: './config.env' })
 
-const Port = process.env.PORT || 3000;
-
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 app.set('view engine', 'ejs');
@@ -81,6 +79,11 @@ app.use('/decrypter', require('./routes/decrypt'));
 app.use('/error', require('./routes/404_error'));
 
 // making a port where our website listen using express
+
+let Port = process.env.PORT;
+if (Port === null || Port === "") {
+    Port === 3000;
+}
 app.listen(Port, () => {
     console.log("Server is listining on port 3000!");
 });
