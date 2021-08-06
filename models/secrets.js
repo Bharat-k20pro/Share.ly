@@ -1,3 +1,3 @@
 const cryptoJs = require('crypto-js');
-const on = cryptoJs.SHA256("sdfjh2hu3u92873883YUIY3U").toString();
+const on = cryptoJs.SHA256(process.env.HIDDEN_KEY).toString();
 module.exports = on;
